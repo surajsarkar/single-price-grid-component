@@ -1,0 +1,151 @@
+body {
+    padding: 7% 13%;
+    text-align: left;
+    font-family: 'Karla', sans-serif;
+    background-color: hsl(204, 43%, 93%);
+}
+
+span {
+    display: block;
+}
+
+.m-all-auto {
+    margin: auto;
+}
+
+.m-t-f {
+    margin-top: 10px;
+}
+
+.m-t-b {
+    margin-bottom: 10px;
+}
+
+.p-four {
+    padding: 40px;
+}
+
+.parent_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-areas: "discription why_us" "discription pricing "; */
+    margin: auto;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 65%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.discription {
+    grid-column: 1/4;
+    grid-row: 1;
+}
+
+.pricing {
+    grid-column: 1/2;
+    grid-row: 2;
+    background-color: gray;
+    color: cyan;
+}
+
+.why_us {
+    grid-column: 2/3;
+    grid-row: 2;
+    background-color: hsl(218, 22%, 67%);
+    color: cyan;
+}
+
+.join {
+    font-family: 'Karla', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    /* display: block; */
+    /* margin-top: 10px;
+    margin-bottom: 10px; */
+    color: gray;
+}
+
+.money-back {
+    color: hsl(71, 73%, 54%);
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.gian_access {
+    color: lightgray;
+    line-height: 1.8;
+}
+
+.mnt-sub {
+    font-size: 1.2rem;
+    margin-bottom: 4px;
+}
+
+.pric {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.per-m {
+    display: inline;
+    font-size: 1rem;
+    color: lightgray;
+    font-weight: lighter;
+}
+
+.full-acc {
+    font-weight: lighter;
+}
+
+.btn {
+    background-color: hsl(71, 73%, 54%);
+    color: cyan;
+    font-weight: bolder;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.wu {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 2;
+    color: lightgray;
+}
+
+@media screen and (max-width:600px) {
+    body {
+        padding: 20px 10px;
+    }
+    .parent_container {
+        grid-template-columns: 1fr;
+    }
+    .discription {
+        grid-column: 1/2;
+        grid-row: 1;
+    }
+    .pricing {
+        grid-column: 1/3;
+        grid-row: 2;
+    }
+    .why_us {
+        grid-column: 1/3;
+        grid-row: 3;
+    }
+    .btn {
+        width: 90%;
+    }
+    .p-four {
+        padding: 15px;
+    }
+    .join {
+        font-size: 1.4rem;
+    }
+}
