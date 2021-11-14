@@ -126,6 +126,7 @@ span {
     }
     .parent_container {
         grid-template-columns: 1fr;
+        width: 80%;
     }
     .discription {
         grid-column: 1/2;
